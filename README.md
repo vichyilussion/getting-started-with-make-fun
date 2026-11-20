@@ -192,7 +192,10 @@ If your local score is far below the live top-10 cutoff, **do not submit yet**
 ### 5.1 Build in a public GitHub repo
 
 - Create the repository **after the bounty opens** (some bounties check this).
-- Add an **OSI-approved license** (`LICENSE` file).
+- Add an **OSI-approved license** `LICENSE` file) with an
+  `SPDX-License-Identifier:` line at the top (e.g.
+    `SPDX-License-Identifier: MIT`) — the kit's `license_osi` check refuses a
+    LICENSE without one, even when GitHub detects the license from its text.
 - Write `README.md` from the requirements' `how_to_submit.readme_template`,
   filling in `vichyilussion`, `getting-started-with-make-fun`, `{description}`, `{run}` and
   `{referral_code}` (your code from `GET /api/me/referrals`, or
@@ -357,6 +360,12 @@ answer (`totals`, `claimable_usd`) and claim it as in §7.
 8. **Keep keys out of everything you upload.** Transcripts are checked, not
    published — but a key printed in a session still lands in the bundle.
    Never `echo` or `cat` a key, keypair or seed phrase.
+   9. **Revise in the same session.** The transcript checks credit a file's
+     final content only when it comes from at least two write/edit messages,
+   so build, run it, then edit to improve in the same session — and make
+   the edits with your agent's write/edit tools. Patching files afterwards
+   with shell commands (`sed`, `awk`) does not count as a revision, and a
+   file written once and never revised fails the `thinking_revised` check.
 
 ---
 
