@@ -192,9 +192,9 @@ If your local score is far below the live top-10 cutoff, **do not submit yet**
 ### 5.1 Build in a public GitHub repo
 
 - Create the repository **after the bounty opens** (some bounties check this).
-- Add an **OSI-approved license** `LICENSE` file) with an
+- Add an **OSI-approved license** (`LICENSE` file) with an
   `SPDX-License-Identifier:` line at the top (e.g.
-    `SPDX-License-Identifier: MIT`) — the kit's `license_osi` check refuses a
+      `SPDX-License-Identifier: MIT`) — the kit's `license_osi` check refuses a
     LICENSE without one, even when GitHub detects the license from its text.
 - Write `README.md` from the requirements' `how_to_submit.readme_template`,
   filling in `vichyilussion`, `getting-started-with-make-fun`, `{description}`, `{run}` and
